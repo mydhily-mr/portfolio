@@ -1,0 +1,210 @@
+html
+{
+scroll-behavior: smooth;
+}
+
+body
+{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f4f6f9;
+color:#333;
+line-height:1.6;
+}
+
+/* HERO */
+
+header
+{
+background:#1c1f2e;
+color:white;
+padding:60px 20px;
+}
+
+.hero
+{
+max-width:1100px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+.hero-text
+{
+max-width:500px;
+}
+
+.hero-text h1
+{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero-text h2
+{
+color:#00c3ff;
+margin-bottom:20px;
+}
+
+.hero-image img
+{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+}
+
+/* NAVIGATION */
+
+nav
+{
+background:#2b2f44;
+text-align:center;
+padding:14px;
+
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+nav a
+{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover
+{
+color:#00c3ff;
+}
+
+nav a.active
+{
+color:#00c3ff;
+}
+
+/* SECTIONS */
+
+section
+{
+max-width:1000px;
+margin:auto;
+padding:50px 20px;
+
+scroll-margin-top: 80px;
+}
+
+h2
+{
+border-bottom:2px solid #ddd;
+padding-bottom:10px;
+margin-bottom:30px;
+}
+
+
+/* SKILLS */
+
+.skills-grid
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill-card
+{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+/* PROJECTS */
+
+.projects-grid
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.project-card
+{
+background:white;
+padding:22px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+/* FOOTER */
+
+footer
+{
+background:#1c1f2e;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+
+/* ===== DARK / LIGHT MODE (ADD BELOW THIS) ===== */
+
+/* Dark mode base */
+body.dark-mode
+{
+background:#111111;
+color:#ffffff;
+}
+
+/* Cards in dark mode */
+body.dark-mode .skill-card,
+body.dark-mode .project-card
+{
+background:#1e1e1e;
+color:#ffffff;
+}
+
+/* Sections headings */
+body.dark-mode h2
+{
+border-bottom:2px solid #444;
+}
+
+/* Navigation */
+body.dark-mode nav
+{
+background:#1a1d2b;
+}
+
+/* Header */
+body.dark-mode header
+{
+background:#0f111a;
+}
+
+/* Toggle button */
+#theme-toggle
+{
+position:absolute;
+top:20px;
+right:20px;
+border:none;
+background:#eee;
+padding:8px 12px;
+border-radius:20px;
+cursor:pointer;
+font-size:16px;
+}
+
+body.dark-mode #theme-toggle
+{
+background:#333;
+color:#fff;
+}
