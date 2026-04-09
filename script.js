@@ -44,3 +44,20 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+
+// ===== HAMBURGER MENU =====
+
+const hamburger = document.getElementById("hamburger");
+const navLinksContainer = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinksContainer.classList.toggle("active");
+});
+
+// Auto close after click
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navLinksContainer.classList.remove("active");
+  });
+});
