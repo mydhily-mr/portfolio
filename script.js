@@ -53,11 +53,17 @@ const navLinksContainer = document.getElementById("nav-links");
 
 hamburger.addEventListener("click", () => {
   navLinksContainer.classList.toggle("active");
+
+  const isOpen = navLinksContainer.classList.contains("active");
+
+  // Change icon
+  hamburger.textContent = isOpen ? "✖" : "☰";
 });
 
 // Auto close after click
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     navLinksContainer.classList.remove("active");
+    hamburger.textContent = "☰"; // reset icon
   });
 });
